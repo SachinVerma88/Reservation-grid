@@ -1,8 +1,9 @@
 // src/components/ReservationCard.tsx
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, FileText, Users, User } from "lucide-react";
+
 
 type Reservation = {
   name: string;
@@ -17,6 +18,7 @@ type Reservation = {
   due: number;
   docStatus: "Received" | "Pending" | "Partial";
 };
+
 
 export function ReservationCard({
   reservation,

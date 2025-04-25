@@ -1,7 +1,8 @@
 // src/pages/Reservations.tsx
+import { Reservation } from "@/types"; // Or wherever it's located
 import { ReservationCard } from "@/components/ReservationCard";
 
-const reservations = [
+const reservations: Reservation[] = [
   {
     name: "John Doe",
     status: "Pending",
